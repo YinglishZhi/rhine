@@ -81,11 +81,8 @@ public class ProcessUtils {
         if (choice <= 0 || choice > processMap.size()) {
             return -1;
         }
-
         return pidMap.getOrDefault(choice, -1);
-
     }
-
 
     /**
      * java pid list

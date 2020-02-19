@@ -44,6 +44,10 @@ public class BootStrap {
 
 
     private static void startCore() {
+
+        // get pid
+        int pid = ProcessUtils.select();
+
         List<String> command = new ArrayList<>();
         // $JAVA_HOME/jre/bin/java
         // // 指定 tool.jar 否则会报错
@@ -55,10 +59,9 @@ public class BootStrap {
         command.add("-Xbootclasspath/a:" + path.getToolsJar());
         command.add("-jar");
         command.add(CORE_PATH + File.separator + CORE_NAME);
-        command.add("-pid" + 90837);
+        command.add("-p" + pid);
         process(command);
     }
-
 
     private static void startClient() {
         try {
