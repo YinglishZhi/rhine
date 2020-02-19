@@ -2,7 +2,6 @@ package com.rhine.terminal.server;
 
 
 import com.rhine.terminal.RhineServer;
-import com.rhine.terminal.RhineServer111;
 import com.rhine.terminal.RhineTelnetConnection;
 import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.ReadLine;

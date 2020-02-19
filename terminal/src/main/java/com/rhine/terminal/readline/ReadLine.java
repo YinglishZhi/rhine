@@ -5,6 +5,8 @@ import com.rhine.terminal.api.TtyConnection;
 import java.util.function.Consumer;
 
 /**
+ * 按行读取
+ *
  * @author LDZ
  * @date 2019-11-11 17:51
  */
@@ -21,7 +23,6 @@ public class ReadLine {
     }
 
 
-
     public void install(TtyConnection connection) {
         connection.setReadHandler(data -> {
             synchronized (ReadLine.class) {
@@ -32,5 +33,8 @@ public class ReadLine {
         });
     }
 
+    public class Interaction {
+
+    }
 
 }
