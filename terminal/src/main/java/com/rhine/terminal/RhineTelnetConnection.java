@@ -12,6 +12,8 @@ import java.util.function.Consumer;
 import static java.nio.charset.StandardCharsets.US_ASCII;
 
 /**
+ * telnet tty connect
+ *
  * @author LDZ
  * @date 2019-11-08 14:44
  */

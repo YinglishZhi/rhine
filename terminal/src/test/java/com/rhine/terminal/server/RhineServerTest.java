@@ -1,42 +1,58 @@
 package com.rhine.terminal.server;
 
 
+import com.rhine.terminal.RhineServer;
 import com.rhine.terminal.RhineServer111;
+import com.rhine.terminal.RhineTelnetConnection;
+import com.rhine.terminal.api.TtyConnection;
+import com.rhine.terminal.readline.ReadLine;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import java.util.function.Supplier;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 @Slf4j
 @Ignore
 public class RhineServerTest {
-    private RhineServer111 rhineServer = null;
 
     @Before
     public void setUp() {
-        rhineServer = new RhineServer111(null).setHost("localhost").setPort(8888);
+
+    }
+
+    public static void main(String[] args) {
+        RhineServer rhineServer = new RhineServer().setHost("127.0.0.1").setPort(2134);
+        rhineServer.open(Handler::handler);
     }
 
     @Test
-    public void open() {
-        rhineServer.open(
-                () -> new TelnetHandler() {
-                    @Override
-                    public void onOpen(TelnetConnection connection) {
-                        log.info("connection open");
-                    }
+    public void tty() {
+        Supplier<TelnetHandler> handlerSupplier = () -> new RhineTelnetConnection(false, false, UTF_8, Handler::handler);
+        TelnetHandler handler = handlerSupplier.get();
+        System.out.println(handler);
+    }
 
-                    @Override
-                    public void onData(byte[] data) {
-                        log.info(new String(data, UTF_8));
-                    }
+
+    static class Handler {
+        static void handler(TtyConnection connection) {
+            readline(new ReadLine(), connection);
+        }
+
+        static void readline(ReadLine readLine, TtyConnection connection) {
+            readLine.readline(connection, "**", line -> {
+                if (null == line) {
+                    connection.write("777");
+                } else {
+                    connection.write("user entered" + line + "\n");
+                    readline(readLine, connection);
                 }
-        );
 
-
-
+            });
+        }
     }
 
     @Test

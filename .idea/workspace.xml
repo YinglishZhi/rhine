@@ -3,12 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="9d1fdc2c-0501-4ce8-8f08-efefdb124037" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/core-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/target/core.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/ProcessUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/ProcessUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/BootStrap$Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/BootStrap$Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/BootStrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/ProcessUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/classes/com/rhine/launch/ProcessUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/launch-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/launch-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/launch.jar" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/launch.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/launch/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/RhineServer$Handler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/target/test-classes/com/rhine/terminal/server/RhineServerTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/target/test-classes/com/rhine/terminal/server/RhineServerTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,104 +41,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="193">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#2729#2730#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/rhine/core/EvilRoot.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="320">
+              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetBootstrap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1354#1733#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
+                <element signature="e#1938#1939#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/IOUtils.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+              <folding>
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="243">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/src/main/java/com/rhine/test/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/CodingErrorAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            <state relative-caret-position="169">
+              <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="163">
+              <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/ProcessUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/launch/src/test/java/com/rhine/launch/ProcessUtilsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="374">
+              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+                <element signature="e#1490#1491#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="747" column="35" selection-start-line="747" selection-start-column="35" selection-end-line="747" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -169,6 +197,8 @@
       <find>heck-1.0-SNAPSHOT.</find>
       <find />
       <find>util</find>
+      <find>null</find>
+      <find>log.err</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -196,14 +226,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/heck/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/test/java/com/rhine/core/AttachTest.java" />
         <option value="$USER_HOME$/logs/20191101/terminal/META-INF/maven/com.yinglishzhi/terminal/pom.xml" />
         <option value="$PROJECT_DIR$/heck/src/test/java/com/rhine/heck/AgentLauncherTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
         <option value="$PROJECT_DIR$/client/src/main/java/com/rhine/client/util/IOUtil.java" />
         <option value="$PROJECT_DIR$/terminal/pom.xml" />
-        <option value="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" />
         <option value="$PROJECT_DIR$/lanuch/src/main/java/com.rhine.lanuch.go" />
         <option value="$PROJECT_DIR$/lanuch/src/main/java/com/rhine/lanuch/IOUtils.java" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
@@ -223,14 +251,11 @@
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadBuffer.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BInaryDecoder.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineEventDecoder.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" />
         <option value="$PROJECT_DIR$/test/src/main/java/com/rhine/test/Math.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" />
         <option value="$PROJECT_DIR$/heck/src/main/java/com/rhine/heck/AgentLauncher.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/com/rhine/core/AttachThread.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/com/rhine/core/TestMainJar.java" />
@@ -247,6 +272,11 @@
         <option value="$PROJECT_DIR$/launch/src/test/java/com/rhine/launch/ProcessUtilsTest.java" />
         <option value="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/ProcessUtils.java" />
         <option value="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer111.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" />
+        <option value="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" />
       </list>
     </option>
   </component>
@@ -274,20 +304,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="launch" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="util" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="util" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="launch" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -315,75 +336,25 @@
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -391,23 +362,33 @@
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -415,131 +396,11 @@
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
               <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="annotation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rhine" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-cli-1.4.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-cli:commons-cli:1.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-cli-1.4.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -609,38 +470,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BootStrap">
+  <component name="RunManager" selected="Application.RhineServerTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rhine.launch.BootStrap" />
-      <module name="launch" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rhine.launch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EvilRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home" />
-      <option name="MAIN_CLASS_NAME" value="com.rhine.core.EvilRoot" />
-      <module name="core" />
-      <option name="PROGRAM_PARAMETERS" value="-p 1234" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rhine.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -659,13 +491,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rhine.launch.ProcessUtils" />
-      <module name="launch" />
+    <configuration name="RhineServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rhine.terminal.RhineServer" />
+      <module name="terminal" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rhine.launch.*" />
+          <option name="PATTERN" value="com.rhine.terminal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RhineServerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rhine.terminal.server.RhineServerTest" />
+      <module name="terminal" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rhine.terminal.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -698,17 +544,34 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="ProcessUtilsTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="launch" />
+    <configuration name="RhineServerTest.open" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="terminal" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rhine.launch.*" />
+          <option name="PATTERN" value="com.rhine.terminal.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.rhine.launch" />
-      <option name="MAIN_CLASS_NAME" value="com.rhine.launch.ProcessUtilsTest" />
-      <option name="METHOD_NAME" value="select" />
+      <option name="PACKAGE_NAME" value="com.rhine.terminal.server" />
+      <option name="MAIN_CLASS_NAME" value="com.rhine.terminal.server.RhineServerTest" />
+      <option name="METHOD_NAME" value="open" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RhineServerTest.tty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="terminal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rhine.terminal.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rhine.terminal.server" />
+      <option name="MAIN_CLASS_NAME" value="com.rhine.terminal.server.RhineServerTest" />
+      <option name="METHOD_NAME" value="tty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -741,19 +604,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EvilRoot" />
-      <item itemvalue="Application.BootStrap" />
-      <item itemvalue="JUnit.ProcessUtilsTest.select" />
-      <item itemvalue="Application.ProcessUtils" />
       <item itemvalue="Application.Math" />
+      <item itemvalue="JUnit.RhineServerTest.open" />
+      <item itemvalue="Application.RhineServer" />
+      <item itemvalue="Application.RhineServerTest" />
+      <item itemvalue="JUnit.RhineServerTest.tty" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BootStrap" />
+        <item itemvalue="Application.RhineServerTest" />
+        <item itemvalue="JUnit.RhineServerTest.tty" />
+        <item itemvalue="JUnit.RhineServerTest.open" />
+        <item itemvalue="Application.RhineServer" />
         <item itemvalue="Application.Math" />
-        <item itemvalue="Application.ProcessUtils" />
-        <item itemvalue="JUnit.ProcessUtilsTest.select" />
-        <item itemvalue="Application.EvilRoot" />
       </list>
     </recent_temporary>
   </component>
@@ -773,23 +636,11 @@
       <workItem from="1573453952849" duration="13039000" />
       <workItem from="1575462707027" duration="1017000" />
       <workItem from="1575856347330" duration="19000" />
-      <workItem from="1582092263012" duration="17163000" />
+      <workItem from="1582092263012" duration="23903000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RhineServerTest - 2019.11.05 at 19h 13m 50s.xml">
-      <configuration name="RhineServerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RhineServerTest_open - 2019.11.05 at 19h 41m 58s.xml">
-      <configuration name="RhineServerTest.open" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RhineServerTest_open - 2019.11.07 at 10h 54m 55s.xml">
-      <configuration name="RhineServerTest.open" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RhineServerTest_open - 2019.11.07 at 10h 56m 41s.xml">
-      <configuration name="RhineServerTest.open" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ProcessUtilsTest_process - 2020.02.19 at 14h 58m 42s.xml">
       <configuration name="ProcessUtilsTest.process" configurationId="JUnit" />
     </history-entry>
@@ -808,15 +659,27 @@
     <history-entry file="ProcessUtilsTest_select - 2020.02.19 at 18h 24m 51s.xml">
       <configuration name="ProcessUtilsTest.select" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RhineServerTest_open - 2020.02.19 at 22h 05m 54s.xml">
+      <configuration name="RhineServerTest.open" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RhineServerTest_open - 2020.02.19 at 22h 06m 07s.xml">
+      <configuration name="RhineServerTest.open" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RhineServerTest_open - 2020.02.19 at 22h 14m 47s.xml">
+      <configuration name="RhineServerTest.open" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RhineServerTest_tty - 2020.02.19 at 22h 42m 47s.xml">
+      <configuration name="RhineServerTest.tty" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97459000" />
+    <option name="totallyTimeSpent" value="104199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26739928" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18803419" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -826,7 +689,7 @@
       <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39871383" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42979637" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -868,6 +731,14 @@
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java</url>
+          <line>44</line>
+          <properties class="com.rhine.terminal.RhineTelnetConnection" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/util/src/main/java/com/rhine/util/CLIConfigurator.java</url>
           <line>43</line>
@@ -880,6 +751,30 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetBootstrap.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -889,6 +784,16 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>factory.get()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>factory</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>(int)value</expression-string>
         <language-id>JAVA</language-id>
@@ -924,141 +829,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>cli.getParsedOptionValue(&quot;p&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cli.getOptionValue(&quot;p&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>cli.getParsedOptionValue(&quot;pid&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2892#2893#0" expanded="true" />
-            <element signature="e#2952#2953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer111.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="147" column="37" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heck/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heck/src/main/java/com/rhine/heck/AgentClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heck/src/main/java/com/rhine/heck/AgentLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heck/src/test/java/com/rhine/heck/AgentLauncherTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/rhine/core/TransClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/rhine/core/TestMainJar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/rhine/core/AttachThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="24" column="77" selection-start-line="24" selection-start-column="77" selection-end-line="24" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar!/org/apache/commons/cli/BasicParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar!/org/apache/commons/cli/DefaultParser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="285" column="35" selection-start-line="285" selection-start-column="35" selection-end-line="285" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar!/org/apache/commons/cli/PatternOptionBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar!/org/apache/commons/cli/Options.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar!/org/apache/commons/cli/Util.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1157,16 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/rhine/client/TelnetConsole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Long.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -1258,16 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/rhine/core/config/Configure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/main/java/com/rhine/client/util/IOUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1282,10 +1035,6 @@
           <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/launch/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -1332,8 +1081,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/rhine/core/EvilRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
+        <state relative-caret-position="359">
           <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/repository/com/alibaba/middleware/cli/1.0.2/cli-1.0.2-sources.jar!/com/taobao/middleware/cli/CommandLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/main/java/com/rhine/client/TelnetConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="58" column="68" selection-start-line="58" selection-start-column="68" selection-end-line="58" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/rhine/core/config/Configure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="76" column="35" lean-forward="true" selection-start-line="76" selection-start-column="35" selection-end-line="76" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1347,12 +1133,143 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java">
+    <entry file="file://$PROJECT_DIR$/client/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/BaseTelnetBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="270">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer111.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1213">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="51" column="57" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
+          <folding>
+            <element signature="e#1354#1733#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/CodingErrorAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/Charset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="747" column="35" selection-start-line="747" selection-start-column="35" selection-end-line="747" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding>
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
           </folding>
         </state>
       </provider>

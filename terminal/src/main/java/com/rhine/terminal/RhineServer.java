@@ -16,6 +16,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 import static jdk.nashorn.internal.runtime.ScriptingFunctions.readLine;
 
 /**
+ * Netty Telnet Bootstrap
+ *
  * @author LDZ
  * @date 2019-11-07 19:29
  */
@@ -99,28 +101,8 @@ public class RhineServer {
         telnet.open(() -> new RhineTelnetConnection(inBinary, outBinary, charset, factory));
     }
 
-
-    public static void main(String[] args) {
-        RhineServer rhineServerI = new RhineServer().setPort(2134);
-        rhineServerI.open(Handler::handler);
-    }
-
-    static class Handler {
-        static void handler(TtyConnection connection) {
-            readline(new ReadLine(), connection);
-        }
-
-        static void readline(ReadLine readLine, TtyConnection connection) {
-            readLine.readline(connection, "**", line -> {
-                if (null == line) {
-                    connection.write("777");
-                } else {
-                    connection.write("user entered" + line + "\n");
-                    readline(readLine, connection);
-                }
-
-            });
-        }
+    public void stop() {
+        telnet.close();
     }
 
 }
