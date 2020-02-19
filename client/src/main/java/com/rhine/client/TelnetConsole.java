@@ -25,7 +25,7 @@ public class TelnetConsole {
     private boolean help = false;
 
     private String targetIp = "127.0.0.1";
-    private int port = 3658;
+    private int port = 3385;
 
 
     @Option(longName = "help", flag = true)

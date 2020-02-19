@@ -1,38 +1,68 @@
 package com.rhine.core;
 
+import com.rhine.core.config.Configure;
 import com.sun.tools.attach.AgentInitializationException;
 import com.sun.tools.attach.AgentLoadException;
 import com.sun.tools.attach.AttachNotSupportedException;
 import com.sun.tools.attach.VirtualMachine;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.cli.*;
+import sun.security.krb5.Config;
 
 import java.io.IOException;
+import java.util.Optional;
 
 /**
  * @author LDZ
  * @date 2019-11-01 17:14
  */
+@Slf4j
 public class EvilRoot {
 
-    private static final String HECK_JAR_PATH = "/Users/zhiyinglish/dev/rhine/heck/target/heck-1.0-SNAPSHOT.jar";
+    private static final String HECK_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/heck/target/heck-1.0-SNAPSHOT.jar";
 
 
     public static void main(String[] args) {
         // server
         try {
-            attachAgent("69290");
+            attachAgent(parse(args));
         } catch (IOException | AttachNotSupportedException | AgentLoadException | AgentInitializationException e) {
             e.printStackTrace();
         }
     }
 
-    private static void attachAgent(String pid) throws IOException, AttachNotSupportedException, AgentLoadException, AgentInitializationException {
+    private static void attachAgent(Configure configure) throws IOException, AttachNotSupportedException, AgentLoadException, AgentInitializationException {
+
+        String pid = Optional.ofNullable(configure).map(Configure::getJavaPid).map(String::valueOf).orElseThrow(() -> new IllegalArgumentException("configure is null"));
+
         VirtualMachine vm = VirtualMachine.attach(pid);
-        vm.loadAgent(HECK_JAR_PATH, "/Users/zhiyinglish/dev/rhine/terminal/target/terminal-jar-with-dependencies.jar");
+
+        vm.loadAgent(HECK_JAR_PATH, "/Users/zhiyinglish/code/DEV/rhine/terminal/target/terminal-jar-with-dependencies.jar");
         vm.detach();
     }
 
-    private static String parse(String[] args) {
-        return args[0];
+    private static Configure parse(String[] args) {
+
+        Options options = new Options();
+        Option pid = Option.builder("p")
+                .longOpt("pid")
+                .hasArg()
+                .desc("this is pid")
+                .type(PatternOptionBuilder.NUMBER_VALUE)
+                .build();
+        options.addOption(pid);
+
+        CommandLineParser parser = new DefaultParser();
+
+        try {
+            CommandLine cli = parser.parse(options, args);
+            Configure configure = new Configure();
+            configure.setJavaPid(((Long) (cli.getParsedOptionValue("pid"))).intValue());
+            return configure;
+        } catch (ParseException e) {
+            // ignore
+        }
+        return null;
     }
 
 }

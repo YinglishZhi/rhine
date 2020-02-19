@@ -23,10 +23,10 @@ import static com.rhine.launch.ProcessUtils.process;
 public class BootStrap {
 
 
-    private static final String CLIENT_PATH = "/Users/zhiyinglish/dev/rhine/client/target";
+    private static final String CLIENT_PATH = "/Users/zhiyinglish/code/DEV/rhine/client/target";
     private static final String CLIENT_NAME = "client-jar-with-dependencies.jar";
 
-    private static final String CORE_PATH = "/Users/zhiyinglish/dev/rhine/core/target";
+    private static final String CORE_PATH = "/Users/zhiyinglish/code/DEV/rhine/core/target";
     private static final String CORE_NAME = "core-jar-with-dependencies.jar";
 
     private static final String[] JAVA_PATHS = {"bin/java", "bin/java.exe", "../bin/java", "../bin/java.exe"};
@@ -55,7 +55,7 @@ public class BootStrap {
         command.add("-Xbootclasspath/a:" + path.getToolsJar());
         command.add("-jar");
         command.add(CORE_PATH + File.separator + CORE_NAME);
-        command.add("76109");
+        command.add("-pid" + 90837);
         process(command);
     }
 
