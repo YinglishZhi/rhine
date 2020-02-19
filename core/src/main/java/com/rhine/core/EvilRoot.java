@@ -1,6 +1,7 @@
 package com.rhine.core;
 
 import com.rhine.core.config.Configure;
+import com.rhine.util.CLIConfigurator;
 import com.sun.tools.attach.AgentInitializationException;
 import com.sun.tools.attach.AgentLoadException;
 import com.sun.tools.attach.AttachNotSupportedException;
@@ -43,21 +44,19 @@ public class EvilRoot {
 
     private static Configure parse(String[] args) {
 
-        Options options = new Options();
-        Option pid = Option.builder("p")
-                .longOpt("pid")
-                .hasArg()
-                .desc("this is pid")
-                .type(PatternOptionBuilder.NUMBER_VALUE)
-                .build();
-        options.addOption(pid);
+        Options options = CLIConfigurator.define(Configure.class);
 
         CommandLineParser parser = new DefaultParser();
 
         try {
             CommandLine cli = parser.parse(options, args);
             Configure configure = new Configure();
-            configure.setJavaPid(((Long) (cli.getParsedOptionValue("pid"))).intValue());
+            try {
+                CLIConfigurator.inject(cli, configure);
+            } catch (Exception e) {
+                // ignore
+                log.error("error");
+            }
             return configure;
         } catch (ParseException e) {
             // ignore
