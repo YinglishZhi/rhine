@@ -2,27 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1fdc2c-0501-4ce8-8f08-efefdb124037" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/EventQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/InputrcParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/KeyEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keymap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/readline/key/InputrcParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/zhiyinglish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhiyinglish.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardDeleteChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardKillWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BeginningOfLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/DeleteChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/EndOfLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/KillLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/NextHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/PreviousHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Wcwidth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLineFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLineFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/RhineTelnetConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/RhineTelnetConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/BinaryDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/BinaryDecoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/EventDecoder.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/EventDecoder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLine$Interaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLine$Interaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLine.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLineFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/readline/ReadLineFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/server/TelnetChannelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/target/classes/com/rhine/terminal/server/TelnetChannelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,104 +48,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BeginningOfLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="243">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="304" selection-start-line="304" selection-end-line="304" />
               <folding>
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1289#1290#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
+                <element signature="e#7159#7160#0" expanded="true" />
+                <element signature="e#7196#7197#0" expanded="true" />
+                <element signature="e#7298#7299#0" expanded="true" />
+                <element signature="e#7336#7337#0" expanded="true" />
+                <element signature="e#7309#7310#0" expanded="true" />
+                <element signature="e#7352#7353#0" expanded="true" />
+                <element signature="e#7409#7410#0" expanded="true" />
+                <element signature="e#7465#7466#0" expanded="true" />
+                <element signature="e#8394#8395#0" expanded="true" />
+                <element signature="e#8429#8430#0" expanded="true" />
+                <element signature="e#7365#7366#0" expanded="true" />
+                <element signature="e#7409#7410#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/EventQueue.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/DeleteChar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="432">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/KeyEvent.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/EndOfLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="432">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/KillLine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/NextHistory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetConnection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keymap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="221">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding>
-                <element signature="e#1508#1741#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keys.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/PreviousHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-              <folding>
-                <element signature="e#2191#2192#0" expanded="true" />
-                <element signature="e#2229#2230#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/InputrcParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="351">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,15 +141,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardChar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="459">
+              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardWord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -235,22 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/BaseTelnetBootstrap.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServerI.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer1.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetBootstrap.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/OutputMode.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryEncoder.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetConnection.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BInaryDecoder.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineEventDecoder.java" />
-        <option value="$PROJECT_DIR$/test/src/main/java/com/rhine/test/Math.java" />
-        <option value="$PROJECT_DIR$/heck/src/main/java/com/rhine/heck/AgentLauncher.java" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/rhine/core/AttachThread.java" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/rhine/core/TestMainJar.java" />
-        <option value="$PROJECT_DIR$/client/src/main/java/com/rhine/client/TelnetConsole.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/util/src/main/java/com/rhine/util/enums/PatternOptionalEnum.java" />
         <option value="$PROJECT_DIR$/util/src/main/java/com/rhine/util/ReflictUtils.java" />
         <option value="$PROJECT_DIR$/util/src/main/java/com/rhine/util/annotation/Description.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/rhine/core/EvilRoot.java" />
@@ -263,29 +240,45 @@
         <option value="$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/BootStrap.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer111.java" />
-        <option value="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" />
         <option value="$PROJECT_DIR$/util/src/main/java/com/rhine/util/Helper.java" />
         <option value="$PROJECT_DIR$/terminal/pom.xml" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Wcwidth.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/LineBuffer.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLineFunction.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadBuffer.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/api/KeyEvent.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventQueue.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/Keys.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keymap.java" />
         <option value="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/readline/key/InputrcParserTest.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/InputrcParser.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/Keys.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Wcwidth.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineStatus.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Vector.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineBuffer.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardChar.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardDeleteChar.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardKillWord.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardWord.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BeginningOfLine.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/Complete.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/DeleteChar.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardChar.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardWord.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/EndOfLine.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/KillLine.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/PreviousHistory.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/NextHistory.java" />
+        <option value="$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java" />
       </list>
     </option>
   </component>
@@ -431,7 +424,29 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="readline" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="readline" type="462c0819:PsiDirectoryNode" />
               <item name="key" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="readline" type="462c0819:PsiDirectoryNode" />
+              <item name="line" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
@@ -449,7 +464,26 @@
               <item name="terminal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="key" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
@@ -575,7 +609,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/launch/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -609,14 +643,15 @@
       <recent name="$PROJECT_DIR$/terminal/src/main" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions" />
       <recent name="$PROJECT_DIR$/launch/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.rhine.terminal.util" />
+      <recent name="com.rhine.terminal.readline.line" />
       <recent name="com.rhine.terminal.readline.key" />
       <recent name="com.rhine.terminal.readline" />
-      <recent name="com.rhine.terminal.util" />
       <recent name="com.rhine.util.annotation" />
-      <recent name="com.rhine.lanuch" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.rhine.heck" />
@@ -805,7 +840,7 @@
       <workItem from="1575462707027" duration="1017000" />
       <workItem from="1575856347330" duration="19000" />
       <workItem from="1582092263012" duration="38759000" />
-      <workItem from="1582197713504" duration="5210000" />
+      <workItem from="1582197713504" duration="10276000" />
     </task>
     <servers />
   </component>
@@ -842,7 +877,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124265000" />
+    <option name="totallyTimeSpent" value="129331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -866,7 +901,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3290461" />
       <window_info anchor="bottom" id="ConsoleMavenPlugin" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3290461" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3290461" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.3290461" />
       <window_info anchor="bottom" id="JRebel Executor" order="15" />
@@ -918,7 +953,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java</url>
-          <line>89</line>
+          <line>173</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -990,134 +1025,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/launch/src/main/java/com/rhine/launch/ProcessUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/BaseTelnetBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/CodingErrorAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer111.java" />
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/saf.java" />
-    <entry file="file://$PROJECT_DIR$/util/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/src/main/java/com/rhine/util/Helper.java" />
-    <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="1422" selection-start-line="1422" selection-end-line="1422" />
-          <folding>
-            <element signature="e#47969#47970#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="376" selection-start-line="376" selection-end-line="376" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Wcwidth.java" />
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/LineBuffer.java" />
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/OutputMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding>
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetBootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#1896#1897#0" expanded="true" />
-            <element signature="e#1938#1939#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="895">
@@ -1155,47 +1062,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-          <folding>
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2411#2412#0" expanded="true" />
-            <element signature="e#2600#2601#0" expanded="true" />
-            <element signature="e#2652#2653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLineFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/launch/src/main/resources/io/termd/core/http/term.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/resources/META-INF/services/io.termd.core.readline.Function">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1270,11 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/resources/com/rhine/terminal/readline/key/inputrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/readline/key/InputrcParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1311,26 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/KeyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding>
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/EventQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
@@ -1363,13 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1384,8 +1222,267 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="491">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="784" column="30" selection-start-line="784" selection-start-column="30" selection-end-line="784" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/KeyEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Wcwidth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/resources/com/rhine/terminal/readline/key/inputrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/resources/META-INF/services/io.termd.core.readline.Function">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLineFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/key/FunctionEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="16" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/util/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/line/LineBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="225" column="34" selection-start-line="225" selection-start-column="34" selection-end-line="225" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1593#1594#0" expanded="true" />
+            <element signature="e#1648#1649#0" expanded="true" />
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#4921#4922#0" expanded="true" />
+            <element signature="e#6002#6003#0" expanded="true" />
+            <element signature="e#6053#6054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/api/TtyConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+          <folding>
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#2559#2560#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2609#2610#0" expanded="true" />
+            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2600#2601#0" expanded="true" />
+            <element signature="e#2652#2653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardDeleteChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardKillWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/Complete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BeginningOfLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/DeleteChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/ForwardWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/EndOfLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/KillLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+          <folding>
+            <element signature="e#7159#7160#0" expanded="true" />
+            <element signature="e#7196#7197#0" expanded="true" />
+            <element signature="e#7298#7299#0" expanded="true" />
+            <element signature="e#7336#7337#0" expanded="true" />
+            <element signature="e#7309#7310#0" expanded="true" />
+            <element signature="e#7352#7353#0" expanded="true" />
+            <element signature="e#7409#7410#0" expanded="true" />
+            <element signature="e#7465#7466#0" expanded="true" />
+            <element signature="e#8394#8395#0" expanded="true" />
+            <element signature="e#8429#8430#0" expanded="true" />
+            <element signature="e#7365#7366#0" expanded="true" />
+            <element signature="e#7409#7410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/PreviousHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/NextHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/test/java/com/rhine/terminal/server/RhineServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding>
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

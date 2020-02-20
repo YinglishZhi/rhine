@@ -4,6 +4,7 @@ import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.*;
 import com.rhine.terminal.server.TelnetConnection;
 import com.rhine.terminal.server.TelnetHandler;
+import com.rhine.terminal.util.Vector;
 
 import java.nio.charset.Charset;
 import java.util.concurrent.TimeUnit;
@@ -31,7 +32,8 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
 
     private final boolean inBinary;
     private final boolean outBinary;
-
+    private Vector size;
+    private Consumer<Vector> sizeHandler;
     private Charset charset;
     private Consumer<TtyConnection> handler;
 
@@ -75,6 +77,21 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
         decoder.write(data);
     }
 
+
+    @Override
+    public Vector size() {
+        return size;
+    }
+
+    @Override
+    public Consumer<Vector> getSizeHandler() {
+        return this.sizeHandler;
+    }
+
+    @Override
+    public void setSizeHandler(Consumer<Vector> handler) {
+        this.sizeHandler = handler;
+    }
 
     @Override
     public Consumer<int[]> getStdinHandler() {

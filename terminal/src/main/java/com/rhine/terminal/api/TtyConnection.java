@@ -1,5 +1,7 @@
 package com.rhine.terminal.api;
 
+import com.rhine.terminal.util.Vector;
+
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
@@ -11,7 +13,11 @@ import java.util.function.Consumer;
  */
 public interface TtyConnection {
 
+    Vector size();
 
+    Consumer<Vector> getSizeHandler();
+
+    void setSizeHandler(Consumer<Vector> handler);
     /**
      * 获取输入句柄
      *

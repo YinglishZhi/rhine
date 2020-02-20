@@ -22,7 +22,7 @@ package com.rhine.terminal.readline.key;
  * @author LDZ
  * @date 2020-02-20 19:45
  */
-class FunctionEvent implements KeyEvent {
+public class FunctionEvent implements KeyEvent {
 
     private final String name;
     private final int[] seq;
@@ -35,7 +35,7 @@ class FunctionEvent implements KeyEvent {
     /**
      * @return the name of the function to apply.
      */
-    String name() {
+    public String name() {
         return name;
     }
 

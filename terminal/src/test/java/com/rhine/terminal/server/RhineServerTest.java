@@ -38,7 +38,7 @@ public class RhineServerTest {
 
     static class Handler {
         static void handler(TtyConnection connection) {
-            readline(new ReadLine(), connection);
+            readline(new ReadLine(null), connection);
         }
 
         static void readline(ReadLine readLine, TtyConnection connection) {
