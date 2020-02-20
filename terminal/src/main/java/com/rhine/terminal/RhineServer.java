@@ -17,6 +17,7 @@ import static jdk.nashorn.internal.runtime.ScriptingFunctions.readLine;
 
 /**
  * Netty Telnet Bootstrap
+ * server 的总入口
  *
  * @author LDZ
  * @date 2019-11-07 19:29

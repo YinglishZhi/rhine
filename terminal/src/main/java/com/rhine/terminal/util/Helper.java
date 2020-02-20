@@ -1,7 +1,6 @@
 package com.rhine.terminal.util;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.ServiceLoader;
 
@@ -14,11 +13,9 @@ public class Helper {
 
     public static <S> List<S> loadServices(ClassLoader loader, Class<S> serviceClass) {
         ArrayList<S> services = new ArrayList<>();
-        Iterator<S> i = ServiceLoader.load(serviceClass, loader).iterator();
-        while (i.hasNext()) {
+        for (S s : ServiceLoader.load(serviceClass, loader)) {
             try {
-                S service = i.next();
-                services.add(service);
+                services.add(s);
             } catch (Exception ignore) {
                 // Log me
             }

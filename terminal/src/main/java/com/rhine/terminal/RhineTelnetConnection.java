@@ -13,6 +13,7 @@ import static java.nio.charset.StandardCharsets.US_ASCII;
 
 /**
  * telnet tty connect
+ * server 各种handler
  *
  * @author LDZ
  * @date 2019-11-08 14:44
@@ -36,7 +37,7 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
 
     private TelnetConnection connection;
 
-    private EventDecoder eventDecoder = new EventDecoder();
+    private EventDecoder eventDecoder = new EventDecoder(3, 26, 4);
     private ReadBuffer readBuffer = new ReadBuffer(this::execute);
     private BinaryDecoder decoder = new BinaryDecoder(512, RhineCharset.INSTANCE, readBuffer);
     private BinaryEncoder encoder = new BinaryEncoder(US_ASCII, data -> connection.send(data));
@@ -55,7 +56,6 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
 //
         connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 1});
         connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 3});
-        System.out.println("in" + inBinary + "out" + outBinary);
 
         if (inBinary) {
             connection.send(new byte[]{BYTE_IAC, BYTE_DO, (byte) 0});
@@ -75,6 +75,16 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
         decoder.write(data);
     }
 
+
+    @Override
+    public Consumer<int[]> getStdinHandler() {
+        return eventDecoder.getReadHandler();
+    }
+
+    @Override
+    public void setStdinHandler(Consumer<int[]> handler) {
+        eventDecoder.setReadHandler(handler);
+    }
 
     @Override
     public Consumer<int[]> stdoutHandler() {

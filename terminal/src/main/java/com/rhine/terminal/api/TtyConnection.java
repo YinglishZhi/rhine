@@ -13,6 +13,20 @@ public interface TtyConnection {
 
 
     /**
+     * 获取输入句柄
+     *
+     * @return 输入句柄
+     */
+    Consumer<int[]> getStdinHandler();
+
+    /**
+     * 输入的句柄
+     *
+     * @param handler 输入句柄
+     */
+    void setStdinHandler(Consumer<int[]> handler);
+
+    /**
      * 输出的句柄
      *
      * @return 输出的句柄

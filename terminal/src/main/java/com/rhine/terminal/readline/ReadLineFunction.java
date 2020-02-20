@@ -20,13 +20,8 @@ public interface ReadLineFunction {
      * @return the loaded function
      */
     static List<ReadLineFunction> loadDefaults() {
-        List<ReadLineFunction> functions = new ArrayList<>();
-        for (ReadLineFunction function : Helper.loadServices(Thread.currentThread().getContextClassLoader(), ReadLineFunction.class)) {
-            functions.add(function);
-        }
-        return functions;
+        return new ArrayList<>(Helper.loadServices(Thread.currentThread().getContextClassLoader(), ReadLineFunction.class));
     }
-
 
     /**
      * The function name, for instance
