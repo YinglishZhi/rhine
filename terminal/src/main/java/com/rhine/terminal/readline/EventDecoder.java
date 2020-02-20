@@ -24,15 +24,13 @@ public class EventDecoder implements Consumer<int[]> {
         return readHandler;
     }
 
-    public EventDecoder setReadHandler(Consumer<int[]> readHandler) {
+    public void setReadHandler(Consumer<int[]> readHandler) {
         this.readHandler = readHandler;
-        return this;
     }
 
 
     @Override
     public void accept(int[] data) {
-        System.out.println("event decoder");
         if (readHandler != null && data.length > 0) {
             readHandler.accept(data);
         }

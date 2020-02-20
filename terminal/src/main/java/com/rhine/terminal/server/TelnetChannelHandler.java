@@ -19,7 +19,7 @@ public class TelnetChannelHandler extends ChannelInboundHandlerAdapter {
     private final Supplier<TelnetHandler> factory;
     private TelnetConnection connection;
 
-    public TelnetChannelHandler(Supplier<TelnetHandler> factory) {
+    TelnetChannelHandler(Supplier<TelnetHandler> factory) {
         this.factory = factory;
     }
 

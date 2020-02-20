@@ -47,7 +47,7 @@ public class BinaryDecoder {
 
     }
 
-    public void write(byte[] data, int start, int len) {
+    private void write(byte[] data, int start, int len) {
 
         int remaining = byteBuffer.remaining();
 

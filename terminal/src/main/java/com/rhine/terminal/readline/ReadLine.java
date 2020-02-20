@@ -27,8 +27,6 @@ public class ReadLine {
         install(connection);
         connection.write(prompt);
 
-        System.out.println("111");
-
     }
 
 

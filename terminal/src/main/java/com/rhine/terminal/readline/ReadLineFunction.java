@@ -13,7 +13,6 @@ import com.rhine.terminal.util.Helper;
  */
 public interface ReadLineFunction {
 
-
     /**
      * Load the defaults function via the {@link java.util.ServiceLoader} SPI.
      *
