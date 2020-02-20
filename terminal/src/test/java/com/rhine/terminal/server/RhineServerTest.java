@@ -5,6 +5,7 @@ import com.rhine.terminal.RhineServer;
 import com.rhine.terminal.RhineTelnetConnection;
 import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.ReadLine;
+import com.rhine.terminal.readline.key.Keymap;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -38,7 +39,7 @@ public class RhineServerTest {
 
     static class Handler {
         static void handler(TtyConnection connection) {
-            readline(new ReadLine(null), connection);
+            readline(new ReadLine(Keymap.getDefault()), connection);
         }
 
         static void readline(ReadLine readLine, TtyConnection connection) {
