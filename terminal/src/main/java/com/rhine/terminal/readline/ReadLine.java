@@ -225,6 +225,7 @@ public class ReadLine {
          * @param buffer the new buffer
          */
         public Interaction refresh(LineBuffer buffer) {
+            // size 初始化
             refresh(buffer, size.x());
             return this;
         }

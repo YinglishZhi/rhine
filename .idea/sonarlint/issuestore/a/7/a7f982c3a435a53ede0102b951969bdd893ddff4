@@ -1,6 +1,6 @@
 
-osquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(é‹šûÿÿÿÿ8´¡—†.
 Gsquid:S3398N"$Move this method into "Interaction".(× óÑúÿÿÿÿ8¯Ñ—†.
 csquid:HiddenFieldCheckŒ"9Rename "data" which hides the field declared at line 115.(ðïÒ8´¡—†.
-vsquid:S00116¶"VRename this field "ACCEPT_LINE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶“ÁŠ8æ™ó–†.
 _squid:UselessImportCheck"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8ÙÒÊ–†.
+vsquid:S00116¶"VRename this field "ACCEPT_LINE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶“ÁŠ8æ™ó–†.
+osquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(é‹šûÿÿÿÿ8´¡—†.

@@ -5,6 +5,7 @@ import com.rhine.terminal.readline.ReadLine;
 import com.rhine.terminal.server.BaseTelnetBootstrap;
 import com.rhine.terminal.server.TelnetBootstrap;
 import com.rhine.terminal.server.TelnetHandler;
+import lombok.extern.slf4j.Slf4j;
 
 import java.nio.charset.Charset;
 import java.util.concurrent.CompletableFuture;
@@ -22,6 +23,7 @@ import static jdk.nashorn.internal.runtime.ScriptingFunctions.readLine;
  * @author LDZ
  * @date 2019-11-07 19:29
  */
+@Slf4j
 public class RhineServer {
 
     private final TelnetBootstrap telnet;
@@ -98,7 +100,8 @@ public class RhineServer {
     }
 
 
-    public void open(Consumer<TtyConnection> factory, Consumer<Throwable> doneHandler) {
+    private void open(Consumer<TtyConnection> factory, Consumer<Throwable> doneHandler) {
+        log.info("host = {}, port = {}", telnet.getHost(), telnet.getPort());
         telnet.open(() -> new RhineTelnetConnection(inBinary, outBinary, charset, factory));
     }
 
