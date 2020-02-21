@@ -1,6 +1,7 @@
 package com.rhine.terminal;
 
 import com.rhine.terminal.api.TtyConnection;
+import com.rhine.terminal.server.netty.RhineTelnetConnection;
 import com.rhine.terminal.server.netty.TelnetBootstrap;
 import lombok.extern.slf4j.Slf4j;
 

@@ -2,10 +2,11 @@ package com.rhine.terminal.server;
 
 
 import com.rhine.terminal.RhineServer;
-import com.rhine.terminal.RhineTelnetConnection;
+import com.rhine.terminal.server.netty.RhineTelnetConnection;
 import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.ReadLine;
 import com.rhine.terminal.readline.key.Keymap;
+import com.rhine.terminal.server.netty.TelnetHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Ignore;

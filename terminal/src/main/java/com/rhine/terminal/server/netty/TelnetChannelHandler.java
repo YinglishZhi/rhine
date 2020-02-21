@@ -1,7 +1,5 @@
 package com.rhine.terminal.server.netty;
 
-import com.rhine.terminal.server.TelnetConnection;
-import com.rhine.terminal.server.TelnetHandler;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -39,7 +37,7 @@ public class TelnetChannelHandler extends ChannelInboundHandlerAdapter {
         int size = buf.readableBytes();
         byte[] data = new byte[size];
         buf.getBytes(0, data);
-        // 从这里开始
+        // 处理接受数据
         connection.receive(data);
     }
 

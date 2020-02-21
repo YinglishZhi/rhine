@@ -1,17 +1,18 @@
-package com.rhine.terminal;
+package com.rhine.terminal.server.netty;
 
 import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.*;
-import com.rhine.terminal.server.TelnetConnection;
-import com.rhine.terminal.server.TelnetHandler;
+import com.rhine.terminal.server.netty.TelnetConnection;
+import com.rhine.terminal.server.netty.TelnetHandler;
 import com.rhine.terminal.util.Vector;
 
 import java.nio.charset.Charset;
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
-import static com.rhine.terminal.server.TelnetConnection.*;
+import static com.rhine.terminal.server.enums.Option.*;
+import static com.rhine.terminal.server.enums.TelnetOrderEnum.BYTE_DO;
+import static com.rhine.terminal.server.enums.TelnetOrderEnum.BYTE_WILL;
 import static java.nio.charset.StandardCharsets.US_ASCII;
 
 /**
@@ -49,18 +50,21 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
     public void onOpen(TelnetConnection connection) {
         this.connection = connection;
 //
-        connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 1});
-        connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 3});
+        connection.writeOptionFunction(BYTE_WILL, ECHO);
+        connection.writeOptionFunction(BYTE_WILL, SGA);
 
         if (inBinary) {
-            connection.send(new byte[]{BYTE_IAC, BYTE_DO, (byte) 0});
+            connection.writeOptionFunction(BYTE_DO, BINARY);
         }
 
         if (outBinary) {
-            connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 0});
+            connection.writeOptionFunction(BYTE_WILL, BINARY);
         }
         // Window size
-        connection.send(new byte[]{BYTE_IAC, BYTE_DO, (byte) 31});
+        connection.writeOptionFunction(BYTE_DO, NAWS);
+
+        // Get some info about user
+        connection.writeOptionFunction(BYTE_DO, TERMINAL_TYPE);
 
         readBuffer.setReadHandler(eventDecoder);
 
@@ -73,6 +77,11 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
         decoder.write(data);
     }
 
+    @Override
+    public void onClose() {
+
+    }
+
 
     @Override
     public Vector size() {
@@ -80,7 +89,7 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
     }
 
     @Override
-    protected void onSize(int width, int height) {
+    public void onSize(int width, int height) {
         this.size = new Vector(width, height);
         if (sizeHandler != null) {
             sizeHandler.accept(size);

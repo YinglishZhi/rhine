@@ -1,9 +1,14 @@
-package com.rhine.terminal.server;
+package com.rhine.terminal.server.enums;
+
+import com.rhine.terminal.server.netty.TelnetConnection;
+
+import static com.rhine.terminal.server.enums.TelnetOrderEnum.*;
 
 /**
  * A telnet option.
  *
- * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>
+ * @author LDZ
+ * @date 2020-02-21 18:49
  */
 public enum Option {
 
@@ -12,25 +17,25 @@ public enum Option {
      */
     BINARY((byte) 0) {
         @Override
-        void handleDo(TelnetConnection session) {
+        public void handleDo(TelnetConnection session) {
             session.sendBinary = true;
 //            session.handler.onSendBinary(true);
         }
 
         @Override
-        void handleDont(TelnetConnection session) {
+        public void handleDont(TelnetConnection session) {
             session.sendBinary = false;
 //            session.handler.onSendBinary(false);
         }
 
         @Override
-        void handleWill(TelnetConnection session) {
+        public void handleWill(TelnetConnection session) {
             session.receiveBinary = true;
 //            session.handler.onReceiveBinary(true);
         }
 
         @Override
-        void handleWont(TelnetConnection session) {
+        public void handleWont(TelnetConnection session) {
             session.receiveBinary = false;
 //            session.handler.onReceiveBinary(false);
         }
@@ -41,11 +46,12 @@ public enum Option {
      */
     ECHO((byte) 1) {
         @Override
-        void handleDo(TelnetConnection session) {
+        public void handleDo(TelnetConnection session) {
 //            session.handler.onEcho(true);
         }
 
-        void handleDont(TelnetConnection session) {
+        @Override
+        public void handleDont(TelnetConnection session) {
 //            session.handler.onEcho(false);
         }
     },
@@ -54,11 +60,13 @@ public enum Option {
      * Telnet Suppress Go Ahead Option (<a href="https://tools.ietf.org/html/rfc858">RFC858</a>).
      */
     SGA((byte) 3) {
-        void handleDo(TelnetConnection session) {
+        @Override
+        public void handleDo(TelnetConnection session) {
 //            session.handler.onSGA(true);
         }
 
-        void handleDont(TelnetConnection session) {
+        @Override
+        public void handleDont(TelnetConnection session) {
 //            session.handler.onSGA(false);
         }
     },
@@ -68,23 +76,20 @@ public enum Option {
      */
     TERMINAL_TYPE((byte) 24) {
 
-        final byte BYTE_IS = 0,BYTE_SEND = 1;
+        static final byte BYTE_IS = 0;
+        static final byte BYTE_SEND = 1;
 
         @Override
-        void handleWill(TelnetConnection session) {
-            session.send(new byte[]{TelnetConnection.BYTE_IAC, TelnetConnection.BYTE_SB, code, BYTE_SEND, TelnetConnection.BYTE_IAC, TelnetConnection.BYTE_SE});
+        public void handleWill(TelnetConnection session) {
+            session.send(new byte[]{BYTE_IAC.code, BYTE_SB.code, code, BYTE_SEND, BYTE_IAC.code, BYTE_SE.code});
         }
 
         @Override
-        void handleWont(TelnetConnection session) {
-        }
-
-        @Override
-        void handleParameters(TelnetConnection session, byte[] parameters) {
-            if (parameters.length > 0 && parameters[0] == BYTE_IS) {
-                String terminalType = new String(parameters, 1, parameters.length - 1);
+        public void handleParameters(TelnetConnection session, byte[] parameters) {
+//            if (parameters.length > 0 && parameters[0] == BYTE_IS) {
+//                String terminalType = new String(parameters, 1, parameters.length - 1);
 //                session.handler.onTerminalType(terminalType);
-            }
+//            }
         }
     },
 
@@ -93,17 +98,17 @@ public enum Option {
      */
     NAWS((byte) 31) {
         @Override
-        void handleWill(TelnetConnection session) {
+        public void handleWill(TelnetConnection session) {
 //            session.handler.onNAWS(true);
         }
 
         @Override
-        void handleWont(TelnetConnection session) {
+        public void handleWont(TelnetConnection session) {
 //            session.handler.onNAWS(false);
         }
 
         @Override
-        void handleParameters(TelnetConnection session, byte[] parameters) {
+        public void handleParameters(TelnetConnection session, byte[] parameters) {
             if (parameters.length == 4) {
                 int width = ((parameters[0] & 0xff) << 8) + (parameters[1] & 0xff);
                 int height = ((parameters[2] & 0xff) << 8) + (parameters[3] & 0xff);
@@ -115,7 +120,7 @@ public enum Option {
     /**
      * The option code.
      */
-    final byte code;
+    public final byte code;
 
     Option(byte code) {
         this.code = code;
@@ -126,7 +131,7 @@ public enum Option {
      *
      * @param session the session
      */
-    void handleDo(TelnetConnection session) {
+    public void handleDo(TelnetConnection session) {
     }
 
     /**
@@ -134,7 +139,7 @@ public enum Option {
      *
      * @param session the session
      */
-    void handleDont(TelnetConnection session) {
+    public void handleDont(TelnetConnection session) {
     }
 
     /**
@@ -142,7 +147,7 @@ public enum Option {
      *
      * @param session the session
      */
-    void handleWill(TelnetConnection session) {
+    public void handleWill(TelnetConnection session) {
     }
 
     /**
@@ -150,7 +155,7 @@ public enum Option {
      *
      * @param session the session
      */
-    void handleWont(TelnetConnection session) {
+    public void handleWont(TelnetConnection session) {
     }
 
     /**
@@ -159,7 +164,22 @@ public enum Option {
      * @param session    the session
      * @param parameters the parameters
      */
-    void handleParameters(TelnetConnection session, byte[] parameters) {
+    public void handleParameters(TelnetConnection session, byte[] parameters) {
+    }
+
+    /**
+     * 根据 option code 获取 Option
+     *
+     * @param optionCode option code
+     * @return option
+     */
+    public static Option getOptionByCode(byte optionCode) {
+        for (Option option : Option.values()) {
+            if (option.code == optionCode) {
+                return option;
+            }
+        }
+        return null;
     }
 
 }
