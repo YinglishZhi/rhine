@@ -1,5 +1,7 @@
-package com.rhine.terminal.server;
+package com.rhine.terminal.server.netty;
 
+import com.rhine.terminal.server.TelnetConnection;
+import com.rhine.terminal.server.TelnetHandler;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -8,7 +10,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.function.Supplier;
 
 /**
- * 处理业务类
+ * Netty 通道处理句柄
+ * telnet连接、读取的总入口
  *
  * @author LDZ
  * @date 2019-11-01 15:36
@@ -16,7 +19,14 @@ import java.util.function.Supplier;
 @Slf4j
 public class TelnetChannelHandler extends ChannelInboundHandlerAdapter {
 
+    /**
+     * 业务处理类 supplier
+     */
     private final Supplier<TelnetHandler> factory;
+
+    /**
+     * telnet 的连接
+     */
     private TelnetConnection connection;
 
     TelnetChannelHandler(Supplier<TelnetHandler> factory) {

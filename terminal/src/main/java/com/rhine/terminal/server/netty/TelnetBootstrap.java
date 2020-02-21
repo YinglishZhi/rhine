@@ -1,5 +1,6 @@
-package com.rhine.terminal.server;
+package com.rhine.terminal.server.netty;
 
+import com.rhine.terminal.server.TelnetHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -19,24 +20,16 @@ import java.util.function.Supplier;
  * @author LDZ
  * @date 2019-11-07 19:21
  */
-public class TelnetBootstrap extends BaseTelnetBootstrap {
+public class TelnetBootstrap {
+
+    private String host = "localhost";
+    private int port = 3385;
 
     private EventLoopGroup group = new NioEventLoopGroup(1);
-
-    @Override
-    public TelnetBootstrap setHost(String host) {
-        return (TelnetBootstrap) super.setHost(host);
-    }
-
-    @Override
-    public TelnetBootstrap setPort(int port) {
-        return (TelnetBootstrap) super.setPort(port);
-    }
 
     /**
      * open telnet server
      */
-    @Override
     public void open(Supplier<TelnetHandler> factory) {
 
         ServerBootstrap serverBootstrap = new ServerBootstrap();
@@ -59,12 +52,27 @@ public class TelnetBootstrap extends BaseTelnetBootstrap {
     /**
      * close
      */
-    @Override
     public void close() {
         group.shutdownGracefully();
     }
 
-
 // ========================
+
+
+    public String getHost() {
+        return host;
+    }
+
+    public void setHost(String host) {
+        this.host = host;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
 
 }

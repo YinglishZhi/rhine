@@ -1,10 +1,7 @@
 package com.rhine.terminal.readline;
 
 import com.rhine.terminal.api.TtyConnection;
-import com.rhine.terminal.readline.key.EventQueue;
-import com.rhine.terminal.readline.key.FunctionEvent;
-import com.rhine.terminal.readline.key.KeyEvent;
-import com.rhine.terminal.readline.key.Keymap;
+import com.rhine.terminal.readline.key.*;
 import com.rhine.terminal.readline.line.LineBuffer;
 import com.rhine.terminal.readline.line.LineStatus;
 import com.rhine.terminal.util.Vector;
@@ -15,7 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
-import java.util.logging.Level;
 import java.util.stream.IntStream;
 
 /**

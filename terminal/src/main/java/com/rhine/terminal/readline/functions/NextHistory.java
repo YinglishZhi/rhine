@@ -17,7 +17,7 @@
 package com.rhine.terminal.readline.functions;
 
 import com.rhine.terminal.readline.ReadLine;
-import com.rhine.terminal.readline.ReadLineFunction;
+import com.rhine.terminal.readline.key.ReadLineFunction;
 import com.rhine.terminal.readline.line.LineBuffer;
 
 import java.util.List;

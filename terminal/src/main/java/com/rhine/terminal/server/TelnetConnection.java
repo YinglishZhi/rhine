@@ -39,7 +39,7 @@ public class TelnetConnection {
 
     final ChannelHandlerContext context;
 
-    TelnetConnection(TelnetHandler handler, ChannelHandlerContext context) {
+    public TelnetConnection(TelnetHandler handler, ChannelHandlerContext context) {
         this.status = Status.DATA;
         this.paramsOptionCode = null;
         this.paramsBuffer = null;
@@ -50,11 +50,11 @@ public class TelnetConnection {
         this.context = context;
     }
 
-    void onInit() {
+    public void onInit() {
         handler.onOpen(this);
     }
 
-    void receive(byte[] data) {
+    public void receive(byte[] data) {
 
         for (byte b : data) {
             status.handle(this, b);
@@ -64,7 +64,7 @@ public class TelnetConnection {
         handler.onData(data);
     }
 
-    void onClose() {
+    public void onClose() {
         handler.onClose();
     }
 

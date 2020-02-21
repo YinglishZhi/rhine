@@ -17,7 +17,7 @@
 package com.rhine.terminal.readline.functions;
 
 import com.rhine.terminal.readline.ReadLine;
-import com.rhine.terminal.readline.ReadLineFunction;
+import com.rhine.terminal.readline.key.ReadLineFunction;
 
 /**
  * @author <a href="mailto:julien@julienviet.com">Julien Viet</a>

@@ -1,8 +1,9 @@
-package com.rhine.terminal.readline;
+package com.rhine.terminal.readline.key;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.rhine.terminal.readline.ReadLine;
 import com.rhine.terminal.util.Helper;
 
 /**
