@@ -7,9 +7,11 @@ import com.rhine.terminal.server.TelnetHandler;
 import com.rhine.terminal.util.Vector;
 
 import java.nio.charset.Charset;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
+import static com.rhine.terminal.server.TelnetConnection.*;
 import static java.nio.charset.StandardCharsets.US_ASCII;
 
 /**
@@ -20,15 +22,6 @@ import static java.nio.charset.StandardCharsets.US_ASCII;
  * @date 2019-11-08 14:44
  */
 public class RhineTelnetConnection extends TelnetHandler implements TtyConnection {
-
-    public static final byte BYTE_IAC = (byte) 0xFF;
-    public static final byte BYTE_DONT = (byte) 0xFE;
-    public static final byte BYTE_DO = (byte) 0xFD;
-    public static final byte BYTE_WONT = (byte) 0xFC;
-    public static final byte BYTE_WILL = (byte) 0xFB;
-    public static final byte BYTE_SB = (byte) 0xFA;
-    public static final byte BYTE_SE = (byte) 0xF0;
-
 
     private final boolean inBinary;
     private final boolean outBinary;
@@ -66,8 +59,11 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
         if (outBinary) {
             connection.send(new byte[]{BYTE_IAC, BYTE_WILL, (byte) 0});
         }
+        // Window size
+        connection.send(new byte[]{BYTE_IAC, BYTE_DO, (byte) 31});
 
         readBuffer.setReadHandler(eventDecoder);
+
         handler.accept(this);
     }
 
@@ -81,6 +77,14 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
     @Override
     public Vector size() {
         return size;
+    }
+
+    @Override
+    protected void onSize(int width, int height) {
+        this.size = new Vector(width, height);
+        if (sizeHandler != null) {
+            sizeHandler.accept(size);
+        }
     }
 
     @Override
@@ -127,4 +131,5 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
     public Consumer<int[]> getReadHandler() {
         return eventDecoder.getReadHandler();
     }
+
 }

@@ -25,4 +25,6 @@ public class TelnetHandler {
     public void onClose() {
 
     }
+
+    protected void onSize(int width, int height) {}
 }

@@ -1,6 +1,5 @@
 package com.rhine.terminal.server;
 
-import com.rhine.terminal.RhineServer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -15,6 +14,7 @@ import java.util.function.Supplier;
 
 /**
  * 基本的启动 netty 的类
+ * Netty Telnet Bootstrap
  *
  * @author LDZ
  * @date 2019-11-07 19:21
