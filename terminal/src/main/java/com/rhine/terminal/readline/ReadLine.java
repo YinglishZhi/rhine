@@ -262,23 +262,16 @@ public class ReadLine {
         }
 
         private void install() {
-            conn.setStdinHandler(data -> {
+            conn.setStdinHandler(d -> {
                 synchronized (ReadLine.this) {
-                    decoder.append(data);
+                    decoder.append(d);
                 }
                 deliver();
             });
             size = conn.size();
-            conn.setSizeHandler(dim -> {
-                if (size != null) {
-                    // Not supported for now
-                    // interaction.resize(size.width(), dim.width());
-                }
-                size = dim;
-            });
+            conn.setSizeHandler(dim -> size = dim);
         }
         // get
-
         public LineBuffer buffer() {
             return buffer;
         }

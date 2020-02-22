@@ -1,4 +1,4 @@
-package com.rhine.terminal.readline;
+package com.rhine.terminal.io;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -7,12 +7,17 @@ import java.util.Arrays;
 import java.util.function.Consumer;
 
 /**
+ * binary解码器
+ *
  * @author LDZ
  * @date 2019-11-08 18:03
  */
 public class BinaryEncoder implements Consumer<int[]> {
 
     private volatile Charset charset;
+    /**
+     * 处理字符数组
+     */
     private final Consumer<byte[]> onBytes;
 
     public BinaryEncoder(Charset charset, Consumer<byte[]> onBytes) {

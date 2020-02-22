@@ -1,4 +1,4 @@
-package com.rhine.terminal.readline;
+package com.rhine.terminal.io;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

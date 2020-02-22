@@ -1,4 +1,4 @@
-package com.rhine.terminal.readline;
+package com.rhine.terminal.io;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -8,6 +8,8 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CoderResult;
 
 /**
+ * 自定义的charset
+ *
  * @author LDZ
  * @date 2019-11-11 17:15
  */
@@ -15,7 +17,7 @@ public class RhineCharset extends Charset {
 
     public static final Charset INSTANCE = new RhineCharset();
 
-    public RhineCharset() {
+    private RhineCharset() {
         super("RHINE", new String[0]);
     }
 

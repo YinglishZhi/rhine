@@ -1,6 +1,4 @@
-package com.rhine.terminal.readline;
-
-import io.netty.buffer.ByteBuf;
+package com.rhine.terminal.io;
 
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
@@ -12,17 +10,21 @@ import java.nio.charset.CodingErrorAction;
 import java.util.function.Consumer;
 
 /**
+ * binary 编码器
+ *
  * @author LDZ
  * @date 2019-11-11 15:31
  */
 public class BinaryDecoder {
-
     private static final ByteBuffer EMPTY = ByteBuffer.allocate(0);
 
     private CharsetDecoder decoder;
     private ByteBuffer byteBuffer;
 
     private final CharBuffer charBuffer;
+    /**
+     * 处理字符
+     */
     private final Consumer<int[]> onChar;
 
     public BinaryDecoder(Charset charset, Consumer<int[]> onChar) {

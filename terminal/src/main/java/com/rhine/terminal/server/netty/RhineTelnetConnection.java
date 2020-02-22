@@ -1,9 +1,7 @@
 package com.rhine.terminal.server.netty;
 
 import com.rhine.terminal.api.TtyConnection;
-import com.rhine.terminal.readline.*;
-import com.rhine.terminal.server.netty.TelnetConnection;
-import com.rhine.terminal.server.netty.TelnetHandler;
+import com.rhine.terminal.io.*;
 import com.rhine.terminal.util.Vector;
 
 import java.nio.charset.Charset;
@@ -33,10 +31,11 @@ public class RhineTelnetConnection extends TelnetHandler implements TtyConnectio
 
     private TelnetConnection connection;
 
-    private EventDecoder eventDecoder = new EventDecoder(3, 26, 4);
     private ReadBuffer readBuffer = new ReadBuffer(this::execute);
     private BinaryDecoder decoder = new BinaryDecoder(512, RhineCharset.INSTANCE, readBuffer);
     private BinaryEncoder encoder = new BinaryEncoder(US_ASCII, data -> connection.send(data));
+
+    private EventDecoder eventDecoder = new EventDecoder(3, 26, 4);
     private final Consumer<int[]> stdout = new OutputMode(encoder);
 
     public RhineTelnetConnection(boolean inBinary, boolean outBinary, Charset charset, Consumer<TtyConnection> handler) {
