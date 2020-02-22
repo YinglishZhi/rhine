@@ -2,6 +2,7 @@ package com.rhine.terminal.server;
 
 
 import com.rhine.terminal.RhineServer;
+import com.rhine.terminal.readline.key.ReadLineFunction;
 import com.rhine.terminal.server.netty.RhineTelnetConnection;
 import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.ReadLine;
@@ -40,7 +41,7 @@ public class RhineServerTest {
 
     static class Handler {
         static void handler(TtyConnection connection) {
-            readline(new ReadLine(Keymap.getDefault()), connection);
+            readline(new ReadLine(Keymap.getDefault()).addFunctions(ReadLineFunction.loadDefaults()), connection);
         }
 
         static void readline(ReadLine readLine, TtyConnection connection) {
