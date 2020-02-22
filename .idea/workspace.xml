@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d1fdc2c-0501-4ce8-8f08-efefdb124037" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/BinaryDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/BinaryEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/EventDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/EventDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/OutputMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/OutputMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/ReadBuffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/RhineCharset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/RhineTelnetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/RhineTelnetConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,64 +25,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="274" selection-start-line="274" selection-end-line="274" />
+            <state relative-caret-position="185">
+              <caret line="268" selection-start-line="268" selection-end-line="268" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/RhineCharset.java">
+        <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding>
-                <element signature="e#429#430#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#1946#1947#0" expanded="true" />
-                <element signature="e#2003#2004#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="218">
+              <caret line="375" column="30" selection-start-line="375" selection-start-column="30" selection-end-line="375" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/BinaryDecoder.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="521">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1822#1823#0" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
+                <element signature="e#2294#2295#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/Buffer.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="389" column="21" selection-start-line="389" selection-start-column="21" selection-end-line="389" selection-end-column="21" />
+            <state relative-caret-position="269">
+              <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
               <folding>
-                <element signature="e#12171#12172#0" expanded="true" />
-                <element signature="e#12210#12211#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/nio/charset/CharsetDecoder.java">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetOrderEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-336">
-              <caret line="136" column="22" selection-start-line="136" selection-start-column="22" selection-end-line="136" selection-end-column="22" />
+            <state relative-caret-position="295">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/Option.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetChannelHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -98,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/RhineTelnetConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+            <state relative-caret-position="593">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#3231#3232#0" expanded="true" />
                 <element signature="e#3283#3284#0" expanded="true" />
@@ -107,46 +125,6 @@
                 <element signature="e#3372#3373#0" expanded="true" />
                 <element signature="e#3428#3429#0" expanded="true" />
                 <element signature="e#3468#3469#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/EventDecoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/OutputMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/BinaryEncoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding>
-                <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -276,12 +254,10 @@
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetChannelHandler.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/Option.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetOrderEnum.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/Option.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetConnection.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/TelnetHandler.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineTelnetConnection.java" />
-        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/RhineCharset.java" />
         <option value="$PROJECT_DIR$/terminal/pom.xml" />
@@ -290,6 +266,8 @@
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/BinaryDecoder.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/io/OutputMode.java" />
         <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java" />
+        <option value="$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java" />
       </list>
     </option>
   </component>
@@ -430,55 +408,39 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="terminal" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.14" type="70bed36:NamedLibraryElementNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.14" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.14.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.14" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.14.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rhine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: commons-codec:commons-codec:1.14" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-codec-1.14.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
-              <item name="binary" type="462c0819:PsiDirectoryNode" />
+              <item name="rhine" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="terminal" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -737,7 +699,7 @@
       <workItem from="1582092263012" duration="38759000" />
       <workItem from="1582197713504" duration="10352000" />
       <workItem from="1582208539509" duration="921000" />
-      <workItem from="1582251608399" duration="29386000" />
+      <workItem from="1582251608399" duration="32436000" />
     </task>
     <servers />
   </component>
@@ -774,7 +736,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159714000" />
+    <option name="totallyTimeSpent" value="162764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -789,7 +751,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42979637" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" weight="0.37406215" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993895" visible="true" weight="0.24115756" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -843,16 +805,16 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java</url>
-          <line>268</line>
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java</url>
+          <line>114</line>
           <properties />
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetChannelHandler.java</url>
+          <line>40</line>
           <properties />
-          <option name="timeStamp" value="62" />
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1010,13 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="370" column="44" selection-start-line="370" selection-start-column="44" selection-end-line="370" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/functions/BackwardChar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1116,42 +1071,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetChannelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding>
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-            <element signature="e#1951#1952#0" expanded="true" />
-            <element signature="e#2050#2051#0" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/RhineServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1186,36 +1105,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetOrderEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/Option.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2107">
-          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1374,10 +1263,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="268" selection-start-line="268" selection-end-line="268" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/repository/io/netty/netty-all/4.1.42.Final/netty-all-4.1.42.Final-sources.jar!/io/netty/channel/AbstractChannelHandlerContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="375" column="30" selection-start-line="375" selection-start-column="30" selection-end-line="375" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetOrderEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/Option.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/RhineTelnetConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        <state relative-caret-position="593">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#3231#3232#0" expanded="true" />
             <element signature="e#3283#3284#0" expanded="true" />
@@ -1389,10 +1319,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/readline/ReadLine.java">
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetChannelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="274" selection-start-line="274" selection-end-line="274" />
+        <state relative-caret-position="201">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/enums/TelnetConnectStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terminal/src/main/java/com/rhine/terminal/server/netty/TelnetConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1822#1823#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2294#2295#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

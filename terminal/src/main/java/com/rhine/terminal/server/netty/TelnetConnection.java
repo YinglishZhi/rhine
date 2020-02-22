@@ -7,6 +7,7 @@ import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
 import static com.rhine.terminal.server.enums.TelnetConnectStatus.DATA;
@@ -152,21 +153,30 @@ public class TelnetConnection {
      */
     public void onOptionTypeFunction(byte optionCode, TelnetConnectStatus status) {
         Option option = Option.getOptionByCode(optionCode);
-        assert option != null;
         switch (status) {
             case DONT:
-                option.handleDont(this);
+                if (option != null) {
+                    option.handleDont(this);
+                }
                 break;
             case DO:
-                option.handleDo(this);
-                send(new byte[]{BYTE_IAC.code, BYTE_WONT.code, optionCode});
+                if (option != null) {
+                    option.handleDo(this);
+                } else {
+                    send(new byte[]{BYTE_IAC.code, BYTE_WONT.code, optionCode});
+                }
                 break;
             case WILL:
-                option.handleWill(this);
-                send(new byte[]{BYTE_IAC.code, BYTE_DONT.code, optionCode});
+                if (option != null) {
+                    option.handleWill(this);
+                } else {
+                    send(new byte[]{BYTE_IAC.code, BYTE_DONT.code, optionCode});
+                }
                 break;
             case WONT:
-                option.handleWont(this);
+                if (option != null) {
+                    option.handleWont(this);
+                }
                 break;
             default:
         }
