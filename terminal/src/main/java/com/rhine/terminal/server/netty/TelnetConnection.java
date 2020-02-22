@@ -77,7 +77,7 @@ public class TelnetConnection {
     private final ChannelHandlerContext context;
 
 
-    public TelnetConnection(TelnetHandler handler, ChannelHandlerContext context) {
+    TelnetConnection(TelnetHandler handler, ChannelHandlerContext context) {
         this.status = DATA;
         this.paramsOptionCode = null;
         this.paramsBuffer = null;
@@ -91,7 +91,7 @@ public class TelnetConnection {
     /**
      * 连接初始化
      */
-    public void onInit() {
+    void onInit() {
         handler.onOpen(this);
     }
 
@@ -100,7 +100,7 @@ public class TelnetConnection {
      *
      * @param data 数据
      */
-    public void receive(byte[] data) {
+    void receive(byte[] data) {
 
         for (byte b : data) {
             status.handle(this, b);
@@ -112,7 +112,7 @@ public class TelnetConnection {
     /**
      * 关闭连接
      */
-    public void onClose() {
+    void onClose() {
         handler.onClose();
     }
 
@@ -130,7 +130,7 @@ public class TelnetConnection {
      *
      * @param task 任务
      */
-    public void execute(Runnable task) {
+    void execute(Runnable task) {
         context.channel().eventLoop().execute(task);
     }
 
@@ -141,7 +141,7 @@ public class TelnetConnection {
      * @param delay 周期
      * @param unit  时间单位 {@link TimeUnit}
      */
-    public void schedule(Runnable task, long delay, TimeUnit unit) {
+    void schedule(Runnable task, long delay, TimeUnit unit) {
         context.channel().eventLoop().schedule(task, delay, unit);
     }
 
@@ -182,7 +182,7 @@ public class TelnetConnection {
         }
     }
 
-    public void writeOptionFunction(TelnetOrderEnum telnetOrder, Option option) {
+    void writeOptionFunction(TelnetOrderEnum telnetOrder, Option option) {
         switch (telnetOrder) {
             // Write a do or will option request to the client.
             case BYTE_DO:
