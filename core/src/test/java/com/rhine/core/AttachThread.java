@@ -24,6 +24,7 @@ public class AttachThread extends Thread {
 
     private static final String AGENT_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/heck/target/heck-1.0-SNAPSHOT.jar";
     private static final String TERMINAL_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/terminal/target/terminal-jar-with-dependencies.jar";
+    private static final String CORE_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/core/target/core-jar-with-dependencies.jar";
 
     public static void main(String[] args) {
         log.info(System.getProperty("user.dir"));
@@ -53,7 +54,7 @@ public class AttachThread extends Thread {
                         if (vmd.displayName().contains(testClass.getSimpleName())) {
                             vm = VirtualMachine.attach(vmd);
 
-                            vm.loadAgent(agentJarPath, TERMINAL_JAR_PATH);
+                            vm.loadAgent(agentJarPath, CORE_JAR_PATH);
                             vm.detach();
                             log.info("从该虚拟机中分离");
                             break;

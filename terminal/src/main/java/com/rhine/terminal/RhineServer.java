@@ -5,6 +5,7 @@ import com.rhine.terminal.server.netty.RhineTelnetConnection;
 import com.rhine.terminal.server.netty.TelnetBootstrap;
 import lombok.extern.slf4j.Slf4j;
 
+import java.lang.instrument.Instrumentation;
 import java.nio.charset.Charset;
 import java.util.function.Consumer;
 
