@@ -5,8 +5,10 @@ import com.rhine.terminal.api.TtyConnection;
 import com.rhine.terminal.readline.ReadLine;
 import com.rhine.terminal.readline.key.Keymap;
 import com.rhine.terminal.readline.key.ReadLineFunction;
+import com.rhine.terminal.util.Helper;
 
 import java.lang.instrument.Instrumentation;
+import java.util.List;
 
 /**
  * @author LDZ
@@ -42,6 +44,7 @@ public class RhineServiceBootstrap {
         rhineServiceBootstrap.bind();
 
     }
+
     public void bind() {
         RhineServer rhineServer = new RhineServer()
                 .setHost("127.0.0.1")
@@ -50,10 +53,13 @@ public class RhineServiceBootstrap {
         rhineServer.open(Handler::handler);
     }
 
-
     static class Handler {
         static void handler(TtyConnection connection) {
-            readline(new ReadLine(Keymap.getDefault()), connection);
+
+            List<ReadLineFunction> readlineFunctions
+                    = Helper.loadServices(ReadLineFunction.class.getClassLoader(), ReadLineFunction.class);
+            ReadLine readLine = new ReadLine(Keymap.getDefault()).addFunctions(readlineFunctions);
+            readline(readLine, connection);
         }
 
         static void readline(ReadLine readLine, TtyConnection connection) {

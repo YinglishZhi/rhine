@@ -1,7 +1,2 @@
 
-ssquid:UselessImportCheck"JRemove this unused import 'com.rhine.terminal.server.BaseTelnetBootstrap'.(óï‹üÿÿÿÿ
-msquid:UselessImportCheck"DRemove this unused import 'com.rhine.terminal.server.TelnetHandler'.(–¬–ûÿÿÿÿ
-jsquid:UselessImportCheck"ARemove this unused import 'com.rhine.terminal.readline.ReadLine'.(™”ç÷ıÿÿÿÿ
-\squid:UselessImportCheck"8Remove this unused import 'java.util.function.Supplier'.(†ïÿ‘
-=squid:S1452^"&Remove usage of generic wildcard type.(„¸âÍ
-Nsquid:S1172e"2Remove this unused method parameter "doneHandler".(’ûú¬ûÿÿÿÿ
+lsquid:UselessImportCheck"ARemove this unused import 'java.lang.instrument.Instrumentation'.(‡÷Ì‹8¼‰÷ˆ‡.
