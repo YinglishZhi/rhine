@@ -38,7 +38,7 @@ public class BootStrap {
 
         startCore();
 
-//        startClient();
+        startClient();
 
     }
 
@@ -74,7 +74,7 @@ public class BootStrap {
             telnetArgs.add("-target-ip");
             telnetArgs.add("localhost");
             telnetArgs.add("-port");
-            telnetArgs.add("3385");
+            telnetArgs.add("1234");
 
             mainMethod.invoke(null, new Object[]{telnetArgs.toArray(new String[0])});
             System.out.println(1);
