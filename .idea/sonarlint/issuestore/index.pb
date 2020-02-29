@@ -114,3 +114,5 @@ c
 3core/src/test/java/com/rhine/core/AttachThread.java,5/0/50c47b4407db40ad7ac701217ab9fc629268e847
 b
 2core/src/test/java/com/rhine/core/TestMainJar.java,8/9/89a1a0f2ee8307df0420aadc8bac320275c11f84
+[
++test/src/main/java/com/rhine/test/Math.java,d/6/d64d890792371ec1e94d245c095ef47a74303545

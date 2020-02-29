@@ -22,6 +22,7 @@ public class EvilRoot {
 
     private static final String HECK_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/heck/target/heck-1.0-SNAPSHOT.jar";
 
+    private static final String CORE_JAR_PATH = "/Users/zhiyinglish/code/DEV/rhine/core/target/core-jar-with-dependencies.jar";
 
     public static void main(String[] args) {
         // server
@@ -35,10 +36,10 @@ public class EvilRoot {
     private static void attachAgent(Configure configure) throws IOException, AttachNotSupportedException, AgentLoadException, AgentInitializationException {
 
         String pid = Optional.ofNullable(configure).map(Configure::getJavaPid).map(String::valueOf).orElseThrow(() -> new IllegalArgumentException("configure is null"));
-
+        System.out.println("core pid = " + pid);
         VirtualMachine vm = VirtualMachine.attach(pid);
 
-        vm.loadAgent(HECK_JAR_PATH, "/Users/zhiyinglish/code/DEV/rhine/terminal/target/terminal-jar-with-dependencies.jar");
+        vm.loadAgent(HECK_JAR_PATH, CORE_JAR_PATH);
         vm.detach();
     }
 

@@ -38,7 +38,7 @@ public class BootStrap {
 
         startCore();
 
-        startClient();
+//        startClient();
 
     }
 
